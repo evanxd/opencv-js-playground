@@ -1,4 +1,5 @@
 (() => {
+  const controlPanel = document.querySelector('#control-panel')
   const fileUploader = document.querySelector('#file-uploader')
   const image = document.querySelector('#image')
 
@@ -18,6 +19,6 @@
 
   window.onOpenCvReady = () => {
     document.querySelector('#message').remove()
-    fileUploader.removeAttribute('disabled')
+    controlPanel.removeAttribute('hidden')
   }
 })()

@@ -6,13 +6,11 @@
     <title>OpenCV Playground</title>
   </head>
   <body>
-    <div>
-      <p id="message">Loading OpenCV...</p>
-      <input type="file" id="file-uploader" disabled />
+    <p id="message">Loading OpenCV...</p>
+    <div id="control-panel" hidden>
+      <input type="file" id="file-uploader" />
+      <img id="image" src="" hidden />
     </div>
-    <div>
-      <img id="image" src="" />
-      <canvas id="canvas" />
-    </div>
+    <canvas id="canvas" />
   </body>
 </html>
